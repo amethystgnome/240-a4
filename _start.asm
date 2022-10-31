@@ -1,7 +1,7 @@
 ; //****************************************************************************************************************************
-; //Program name: "_start". This program will output the number of tics in 'time' from the cpu, take a float input, convert said float into radians,
-; //               call written cosine function, and output the results of these calculations. 
-; //               Copyright (C) 2022 Aubrianna Sample
+; //Program name: "_start". This program is will output the number of tics from the cpu, take a float input, convert the user input into radians,
+; //               call cosine, and output the results all from pure x86 assembly.
+; //               Copyright (C) 2022 Timothy Vu.
 ; //                                                                                                                           *
 ; //This file is part of the software program "_start".                                                                   *
 ; //_start is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License   *
@@ -16,22 +16,22 @@
 ; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**//
 
 ; //Author information
-; //  Author name: Aubrianna Sample
-; //  Author email: aubriannasample@csu.fullerton.edu
+; //  Author name: Timothy Vu
+; //  Author email: timothy.vu@csu.fullerton.edu
 ; //  Author Section: M/W 2:00pm-3:50pm
 ; //
 ; //Program information
 ; //  Program name: _start
-; //  Programming languages: X86
-; //  Date program began: October 21 2022
-; //  Date of last update: October 25 2022
+; //  Programming languages: seven modules in X86
+; //  Date program began: 2022 October 23
+; //  Date of last update: 2022 October 26
+; //  Date of reorganization of comments: 2022 October 27
 ; //  Files in this program: _start.asm, _math.asm, cosine.asm, ftoa.asm, itoa.asm, stringtof.asm strlen.asm
-; //  Status: Finished.  The program was tested extensively with no errors in WSL.
+; //  Status: Finished.  The program was tested extensively with no errors in Tuffix 2020 Edition.
 ; //
 ; //Purpose
-; This program will output the number of tics in 'time' from the cpu, take a float input, convert said float into radians,
-; call written cosine function, and output the results of these calculations. 
-
+; //  The purpose of this file is to output the number of tics from the cpu, take user input, convert the user input into radians, call
+; //  the cosine file, and output the results from pure assembly
 ; //
 ; //This file
 ; //   File name: _start.asm
@@ -65,7 +65,7 @@ segment .data
 newline db 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0        ;Declare an array of 8 bytes where each byte is initialize with ascii value 10 (newline)                                   
 tab db 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0    ;Declare an array of 8 bytes where each byte is initialize with 32 (blank space).  Thus, this array equals 
                                                             ;one standard tab.
-welcome db "Welcome to Accurate Cosines by Aubrianna Sample.", 10, 0
+welcome db "Welcome to Accurate Cosines by Timothy Vu.", 10, 0
 
 time db "The time is now ", 0
 time2 db " tics.", 10, 0

@@ -1,7 +1,7 @@
 ; //****************************************************************************************************************************
-; //Program name: "cosine". Called from: _start.asm. Program will take float number and calculate the cosine of that number. The program will then
-; //               Returns to: _start.asm
-; //               Copyright (C) 2022 Aubrianna Sample.
+; //Program name: "cosine". This program will be called from _start.asm and will receive a float number. The program will then
+; //               take that float number, calculate the cosine, then return the result back into _start.asm as a float number (xmm)
+; //               Copyright (C) 2022 Timothy Vu.
 ; //                                                                                                                           *
 ; //This file is part of the software program "cosine".                                                                   *
 ; //cosine is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License   *
@@ -16,17 +16,22 @@
 ; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**//
 
 ; //Author information
-; //  Author name: Aubrianna Sample
-; //  Author email: aubriannasample@csu.fullerton.edu
+; //  Author name: Timothy Vu
+; //  Author email: timothy.vu@csu.fullerton.edu
 ; //  Author Section: M/W 2:00pm-3:50pm
 ; //
 ; //Program information
 ; //  Program name: cosine
-; //  Programming languages: X86
-; //  Date program began: October 21 2022
-; //  Date of last update: October 25 2022
+; //  Programming languages: seven modules in X86
+; //  Date program began: 2022 October 23
+; //  Date of last update: 2022 October 26
+; //  Date of reorganization of comments: 2022 October 27
 ; //  Files in this program: _start.asm, _math.asm, cosine.asm, ftoa.asm, itoa.asm, stringtof.asm strlen.asm
-; //  Status: Finished.  The program was tested extensively with no errors in WSL.
+; //  Status: Finished.  The program was tested extensively with no errors in Tuffix 2020 Edition.
+; //
+; //Purpose
+; //  The purpose of this file is to receive a float input, calculate the cosine of that input, and
+; //  return the result as a float number (xmm)
 ; //
 ; //This file
 ; //   File name: cosine.asm
