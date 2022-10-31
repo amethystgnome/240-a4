@@ -1,7 +1,7 @@
 ; //****************************************************************************************************************************
 ; //Program name: "cosine". This program will be called from _start.asm and will receive a float number. The program will then
 ; //               take that float number, calculate the cosine, then return the result back into _start.asm as a float number (xmm)
-; //               Copyright (C) 2022 Timothy Vu.
+; //               Copyright (C) 2022 Aubrianna Sample.
 ; //                                                                                                                           *
 ; //This file is part of the software program "cosine".                                                                   *
 ; //cosine is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License   *
@@ -16,8 +16,8 @@
 ; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**//
 
 ; //Author information
-; //  Author name: Timothy Vu
-; //  Author email: timothy.vu@csu.fullerton.edu
+; //  Author name: Aubrianna Sample
+; //  Author email: aubriannasample@csu.fullerton.edu
 ; //  Author Section: M/W 2:00pm-3:50pm
 ; //
 ; //Program information

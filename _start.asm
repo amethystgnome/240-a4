@@ -1,7 +1,7 @@
 ; //****************************************************************************************************************************
 ; //Program name: "_start". This program is will output the number of tics from the cpu, take a float input, convert the user input into radians,
 ; //               call cosine, and output the results all from pure x86 assembly.
-; //               Copyright (C) 2022 Timothy Vu.
+; //               Copyright (C) 2022 Aubrianna Sample.
 ; //                                                                                                                           *
 ; //This file is part of the software program "_start".                                                                   *
 ; //_start is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License   *
@@ -16,8 +16,8 @@
 ; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**//
 
 ; //Author information
-; //  Author name: Timothy Vu
-; //  Author email: timothy.vu@csu.fullerton.edu
+; //  Author name: Aubrianna Sample
+; //  Author email: aubriannasample@csu.fullerton.edu
 ; //  Author Section: M/W 2:00pm-3:50pm
 ; //
 ; //Program information
@@ -65,7 +65,7 @@ segment .data
 newline db 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0xa, 0        ;Declare an array of 8 bytes where each byte is initialize with ascii value 10 (newline)                                   
 tab db 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0    ;Declare an array of 8 bytes where each byte is initialize with 32 (blank space).  Thus, this array equals 
                                                             ;one standard tab.
-welcome db "Welcome to Accurate Cosines by Timothy Vu.", 10, 0
+welcome db "Welcome to Accurate Cosines by Aubrianna Sample.", 10, 0
 
 time db "The time is now ", 0
 time2 db " tics.", 10, 0
