@@ -1,9 +1,45 @@
-; Copyright 2022 Diamond Dinh (diamondburned), licensed under the MIT license.
+; //****************************************************************************************************************************
+; //Program name: "_math". 
+; //               Copyright (C) 2022 Aubrianna Sample
+; //                                                                                                                           *
+; //This file is part of the software program  _math".                                                                   *
+; / _math is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License   *
+; //version 3 as published by the Free Software Foundation.                                                                    *
+; / _math is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied          *
+; //warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.     *
+
+; //A copy of the GNU General Public License v3 is available here:  <https:;www.gnu.org/licenses/>.                            *
+
+
+; //****************************************************************************************************************************
+; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**//
 
 ; //Author information
-; //  Author name: Timothy Vu
-; //  Author email: timothy.vu@csu.fullerton.edu
+; //  Author name: Aubrianna Sample
+; //  Author email: aubriannasample@csu.fullerton.edu
 ; //  Author Section: M/W 2:00pm-3:50pm
+; //
+; //Program information
+; //  Program name: _math
+; //  Programming languages: X86
+; //  Date program began: October 21 2022
+; //  Date of last update: October 25 2022
+; //  Files in this program: _start.asm, _math.asm, cosine.asm, ftoa.asm, itoa.asm, stringtof.asm strlen.asm
+; //  Status: Finished.  The program was tested extensively with no errors in WSL.
+; //
+; //Purpose
+; //
+; //This file
+; //   File name: _math.asm
+; //   Language: x86
+; //   Max page width: 172 columns
+; //   Compile: nasm -f elf64 -l _math.lis -o _math.o _math.asm 
+; //   Linker: ld -o final.out _start.o strlen.o cosine.o itoa.o _math.o ftoa.o stringtof.o 
+; //
+; //=======1=========2=========3=========4=========5=========6=========7=========8=========9=========0=========1=========2=========3**
+; //
+; //
+; //===== Begin code area ===========================================================================================================
 
 %ifndef _math
 
