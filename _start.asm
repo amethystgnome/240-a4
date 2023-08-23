@@ -1,6 +1,6 @@
 ; //****************************************************************************************************************************
-; //Program name: "_start". This program is will output the number of tics from the cpu, take a float input, convert the user input into radians,
-; //               call cosine, and output the results all from pure x86 assembly.
+; //Program name: "_start". This program will output the number of tics from the cpu by taking a float input, converting the user input into radians,
+; //               calling cosine, and output the results all from pure x86 assembly.
 ; //               Copyright (C) 2022 Aubrianna Sample.
 ; //                                                                                                                           *
 ; //This file is part of the software program "_start".                                                                   *
